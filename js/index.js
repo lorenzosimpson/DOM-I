@@ -126,3 +126,26 @@ contactEmail.textContent = siteContent['contact']['email'];
 
 let footerText = document.querySelectorAll('p')[8];
 footerText.textContent = siteContent['footer']['copyright']
+
+//add new elements
+let navBlog = document.createElement('a');
+navBlog.textContent = 'Blog';
+const navList = document.querySelector('nav');
+navList.appendChild(navBlog);
+
+let navHome = document.createElement('a');
+navHome.textContent = 'Home';
+navList.prepend(navHome);
+
+//update styles
+navHome.style.color = 'green';
+navServices.style.color = 'green';
+navProduct.style.color = 'green';
+navVision.style.color = 'green';
+navFeatures.style.color = 'green';
+navAbout.style.color = 'green';
+navContact.style.color = 'green';
+navBlog.style.color = 'green';
+
+
+
