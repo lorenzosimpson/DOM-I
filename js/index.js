@@ -64,7 +64,7 @@ navAbout.textContent = siteContent['nav']['nav-item-5'];
 let navContact = document.querySelectorAll('a')[5];
 navContact.textContent = siteContent['nav']['nav-item-6'];
 
-
+//begin top section
 let codeSnippet = document.getElementById('cta-img');
 codeSnippet.setAttribute('src', 'img/header-img.png')
 
@@ -74,6 +74,7 @@ headerText.textContent = siteContent['cta']['h1'];
 let startBtn = document.querySelector('button');
 startBtn.textContent = siteContent['cta']['button'];
 
+//begin main content
 let featuresTitle = document.querySelector('h4');
 featuresTitle.textContent = siteContent['main-content']['features-h4']
 
@@ -89,6 +90,8 @@ aboutContent.textContent = siteContent['main-content']['about-content']
 let middleImg = document.getElementById('middle-img');
 middleImg.src = 'img/mid-page-accent.jpg';
 
+
+//begin bottom content
 let servicesTitle = document.querySelectorAll('h4')[2];
 servicesTitle.textContent = siteContent['main-content']['services-h4'];
 
@@ -107,6 +110,8 @@ visionTitle.textContent = siteContent['main-content']['vision-h4'];
 let visionContent = document.querySelectorAll('p')[4];
 visionContent.textContent = siteContent['main-content']['vision-content'];
 
+
+//begin contact info
 let contactTitle = document.querySelectorAll('h4')[5];
 contactTitle.textContent = siteContent['contact']['contact-h4'];
 
