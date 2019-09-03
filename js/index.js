@@ -39,4 +39,113 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+
+//begin dom manipulation//
+
+
+//begin navBar//
+let navServices = document.querySelectorAll('a')[0];
+navServices.textContent = siteContent['nav']['nav-item-1'];
+
+let navProduct = document.querySelectorAll('a')[1];
+navProduct.textContent = siteContent['nav']['nav-item-2'];
+
+let navVision = document.querySelectorAll('a')[2];
+navVision.textContent = siteContent['nav']['nav-item-3'];
+
+let navFeatures = document.querySelectorAll('a')[3];
+navFeatures.textContent = siteContent['nav']['nav-item-4'];
+
+let navAbout = document.querySelectorAll('a')[4];
+navAbout.textContent = siteContent['nav']['nav-item-5'];
+
+let navContact = document.querySelectorAll('a')[5];
+navContact.textContent = siteContent['nav']['nav-item-6'];
+
+//begin top section
+let codeSnippet = document.getElementById('cta-img');
+codeSnippet.setAttribute('src', 'img/header-img.png')
+
+let headerText = document.querySelector('h1');
+headerText.textContent = siteContent['cta']['h1'];
+
+let startBtn = document.querySelector('button');
+startBtn.textContent = siteContent['cta']['button'];
+
+//begin main content
+let featuresTitle = document.querySelector('h4');
+featuresTitle.textContent = siteContent['main-content']['features-h4']
+
+let featuresText = document.querySelector('p');
+featuresText.textContent = siteContent['main-content']['features-content']
+
+let aboutTitle = document.querySelectorAll('h4')[1];
+aboutTitle.textContent = siteContent['main-content']['about-h4'];
+
+let aboutContent = document.querySelectorAll('p')[1];
+aboutContent.textContent = siteContent['main-content']['about-content']
+
+let middleImg = document.getElementById('middle-img');
+middleImg.src = 'img/mid-page-accent.jpg';
+
+
+//begin bottom content
+let servicesTitle = document.querySelectorAll('h4')[2];
+servicesTitle.textContent = siteContent['main-content']['services-h4'];
+
+let servicesContent = document.querySelectorAll('p')[2];
+servicesContent.textContent = siteContent['main-content']['services-content'];
+
+let productTitle = document.querySelectorAll('h4')[3];
+productTitle.textContent = siteContent['main-content']['product-h4'];
+
+let productContent = document.querySelectorAll('p')[3];
+productContent.textContent = siteContent['main-content']['product-content'];
+
+let visionTitle = document.querySelectorAll('h4')[4];
+visionTitle.textContent = siteContent['main-content']['vision-h4'];
+
+let visionContent = document.querySelectorAll('p')[4];
+visionContent.textContent = siteContent['main-content']['vision-content'];
+
+
+//begin contact info
+let contactTitle = document.querySelectorAll('h4')[5];
+contactTitle.textContent = siteContent['contact']['contact-h4'];
+
+let contactAddress = document.querySelectorAll('p')[5];
+contactAddress.textContent = siteContent['contact']['address'];
+
+let contactPhone = document.querySelectorAll('p')[6];
+contactPhone.textContent = siteContent['contact']['phone'];
+
+let contactEmail = document.querySelectorAll('p')[7];
+contactEmail.textContent = siteContent['contact']['email'];
+
+let footerText = document.querySelectorAll('p')[8];
+footerText.textContent = siteContent['footer']['copyright']
+
+//add new elements
+let navBlog = document.createElement('a');
+navBlog.textContent = 'Blog';
+const navList = document.querySelector('nav');
+navList.appendChild(navBlog);
+
+let navHome = document.createElement('a');
+navHome.textContent = 'Home';
+navList.prepend(navHome);
+
+//update styles
+navHome.style.color = 'green';
+navServices.style.color = 'green';
+navProduct.style.color = 'green';
+navVision.style.color = 'green';
+navFeatures.style.color = 'green';
+navAbout.style.color = 'green';
+navContact.style.color = 'green';
+navBlog.style.color = 'green';
+
+
+
